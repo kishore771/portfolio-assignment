@@ -1,0 +1,226 @@
+.hero {
+  height: 100vh;
+  background-color: #ffffff;
+  padding-top: 120px;
+  overflow: hidden;
+}
+
+
+.hero.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.hero.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hero-container {
+  max-width: 1200px;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hello-message {
+  background: url('https://c.animaapp.com/mcccefbncmoEYQ/img/message-box.svg') no-repeat center;
+  background-size: contain;
+  width: 199px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-left: -20px;
+}
+
+.display-4 {
+  font-size: 4rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.text-purple {
+  color: #827d7d;
+  font-weight: bold;
+}
+.hero.dark-mode .text-purple {
+  color: #b3b3b3;
+}
+.lead {
+  font-size: 1.875rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  color: inherit;
+}
+
+.download-btn{
+  background: linear-gradient(90deg, #DF580C 0%, #FD993D 100%);
+  border-radius: 2px;
+  border: solid 3px #ffffff;
+  border-width: 5px;
+  padding: 14px 20px;
+  font-family: "segoe ui";
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  box-shadow: 4px 4px 6px rgba(149, 147, 147, 0.518);
+  cursor: pointer;
+  margin: 20px;
+}
+
+.git-btn{
+  background: linear-gradient(90deg, #434343 0%, #000000 100%);
+  box-shadow: 4px 4px 6px rgba(149, 147, 147, 0.518);
+  border-radius: 2px;
+  border: solid 3px #ffffff;
+  border-width: 5px;
+  padding: 14px 20px;
+  font-family: "segoe ui";
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.hero.dark-mode .download-btn{
+  border: solid 3px #ffffff;
+  border-width: 5px;
+  border-radius: 6px;
+}
+
+.hero.dark-mode .git-btn{
+  border: solid 3px #ffffff;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+
+.hero-image-col {
+  position: relative;
+}
+
+.blob-background {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  left: 250px;
+  width: 489px;
+  height: 580px;
+  background: url('https://c.animaapp.com/mcccefbncmoEYQ/img/hero-background.svg') no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+
+.profile-img {
+  align-items: end;
+  width: 400px;
+  height: 425px;
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 170px;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  border-bottom-left-radius: 800px;
+  margin-top: 61px;
+  left: 139px;
+  top: -0px;
+}
+
+.email-line{
+  font-weight: 1000;
+}
+
+.email-vertical1 {
+  position: absolute;
+  right: -170px;
+  top: 90%;
+  transform: rotate(-90deg) translateY(-50%);
+  font-family: 'Segoe UI';
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #000000;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.hero.dark-mode .email-vertical1 {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 80px;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+  }
+  
+  .hello-message {
+    width: 150px;
+    height: 54px;
+    font-size: 1.8rem;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .download-btn, .git-btn {
+    width: 180px;
+    height: 88px;
+    font-size: 1rem;
+    padding: 20px;
+  }
+  
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .blob-background {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .profile-img {
+    width: 300px;
+    height: 345px;
+    margin: 30px auto;
+  }
+  
+  .email-vertical {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1.125rem;
+  }
+  
+  .profile-img {
+    width: 250px;
+    height: 287px;
+  }
+}

@@ -1,0 +1,191 @@
+/* src/components/About/About.css */
+
+.about-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: white;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.about-section.dark-mode {
+  background: #1a1a1a;
+  color: white;
+}
+
+/* Blobs as background containers */
+.grey-blob,
+.yellow-blob {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.grey-blob.top-left {
+  width: 594px;
+  height: 694px;
+  top: 68px;
+  left: -236px;
+  background-image: url('https://c.animaapp.com/mcccmuvtrctuey/img/vector-1.svg');
+}
+
+.yellow-blob.top-right {
+  width: 89px;
+  height: 1589px;
+  top: 124px;
+  right: -165px;
+  background-image: url('https://c.animaapp.com/mcccmuvtrctuey/img/vector-5.svg');
+}
+
+
+.grey-blob.bottom-right {
+  width: 865px;
+  height: 650px;
+  top: 29px;
+  right: -550px;
+  background-image: url('https://c.animaapp.com/mcccmuvtrctuey/img/vector-3.png');
+}
+.line-color{
+    color: rgb(143, 146, 148);
+}
+
+/* Content */
+.about-content-wrapper {
+  position: relative;
+  max-width: 865px;
+  margin-top: 25px;
+  margin: 10px auto 0;
+  z-index: 3;
+}
+
+.about-title {
+  font-size: 34px;
+  font-weight: 600;
+  color: black;
+  padding-top: 35px;
+  margin: 0 0 20px 0;
+  line-height: normal;
+}
+
+.dark-mode .about-title {
+  color: white;
+}
+
+.divider,
+.bottom-divider {
+  height: 1px;
+  background: #ffffff;
+  border: none;
+  border-width: 10px;
+  margin: 20px auto 40px;
+  max-width: 498px;
+}
+
+.dark-mode .divider,
+.dark-mode .bottom-divider {
+  background: #333;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+}
+
+.dark-mode .about-text {
+  color: white;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.about-text strong {
+  font-weight: 400;
+}
+
+/* Hand image */
+.hand-img {
+  position: absolute;
+  top: 00px;
+  left: -20px;
+  width: 420px;
+  z-index: 2;
+}
+
+.email-icon{
+    width: 50px;
+    font-weight: 600;
+}
+/* Vertical Email */
+.email-vertical {
+  position: absolute;
+  top: 481px;
+  right: 135px;
+  transform: rotate(-90deg);
+  transform-origin: right center;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  color: black;
+  z-index: 3;
+}
+
+.dark-mode .email-vertical {
+  color: white;
+}
+
+/* Decorative */
+.side-decoration,
+.bottom-decoration {
+  position: absolute;
+  z-index: 1;
+}
+
+.side-decoration {
+  width: 265px;
+  height: 250px;
+  top: 579px;
+  right: 229px;
+}
+
+.bottom-decoration {
+  width: 250px;
+  height: 240px;
+  bottom: -82px;
+  left: 311px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content-wrapper {
+    margin: 100px 1rem 0;
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .hand-img,
+  .grey-blob,
+  .yellow-blob,
+  .side-decoration,
+  .bottom-decoration,
+  .email-vertical {
+    display: none;
+  }
+
+  .divider,
+  .bottom-divider {
+    max-width: 100%;
+  }
+}
