@@ -20,6 +20,7 @@
   max-width: 1200px;
   max-height: 100vh;
   margin: 0 auto;
+  margin-left: 20px;
   padding: 0 2rem;
 }
 
@@ -146,7 +147,7 @@
 .email-vertical1 {
   position: absolute;
   right: -170px;
-  top: 90%;
+  top: 98%;
   transform: rotate(-90deg) translateY(-50%);
   font-family: 'Segoe UI';
   font-size: 0.9375rem;

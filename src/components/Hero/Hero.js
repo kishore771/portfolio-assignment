@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Hero = ({ darkMode }) => {
   return (
     <div className={`hero py-5 ${darkMode ? "dark-mode" : "light-mode"}`}>
-      <Container className="hero-container d-flex flex-column justify-content-center mt-5">
+      <Container className="hero-container d-flex flex-column justify-content-center mt-1 ml-3">
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start">
             <div className="hello-message">Hello!</div>
